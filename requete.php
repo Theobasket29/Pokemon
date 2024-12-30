@@ -29,7 +29,7 @@ $evolution = $_POST['evo'];
 $sql = $conn->prepare("INSERT INTO pokemon (nom, complement, pv, type, collection, annee, langue, pays, rarete, prix, numero, evolution) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
 // Associer les paramètres
-$sql->bind_param("ssisssssdsis", $nom, $complment, $pv, $type, $collection, $annee, $langue, $pays, $rarete, $prix, $numero, $evolution);
+$sql->bind_param("ssisssssdsis", $nom, $complment, $pv, $type, $collection, $annee, $langue, $pays, $rarete, $prix, $numero, $evo);
 
 if ($sql->execute()) {
     echo "Nouveau Pokémon ajouté avec succès";
