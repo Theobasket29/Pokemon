@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    
+    <form action="requete.php" method="post">
+        
+        <label for="nom">*Nom:</label>
+        <input type="text" id="name" name="nom" required><br><br>
+        <!--bouton-->
+        <label for="comp">Complément:</label>
+        <input type="checkbox" id="ex" name="comp[]" value="ex">
+        <label for="ex">Ex</label><br>
+        <input type="checkbox" id="m" name="comp[]" value="m">
+        <label for="m">M</label><br>
+        <input type="checkbox" id="duo" name="comp[]" value="duo">
+        <label for="duo">Duo</label><br><br>
+
+        <label for="pv">*PV:</label>
+        <input type="text" id="pv" name="pv" required><br><br>
+        <!--liste-->
+        <label for="type">*Type:</label>
+        <select id="type" name="type" required>
+            <option value="feu">Feu</option>
+            <option value="eau">Eau</option>
+            <option value="plante">Plante</option>
+            <option value="électrique">Électrique</option>
+            <option value="psy">Psy</option>
+            <option value="normal">Normal</option>
+            <option value="combat">Combat</option>
+            <option value="vol">Vol</option>
+            <option value="insecte">Insecte</option>
+            <option value="roche">Roche</option>
+            <option value="sol">Sol</option>
+            <option value="spectre">Spectre</option>
+            <option value="dragon">Dragon</option>
+            <option value="ténèbres">Ténèbres</option>
+            <option value="acier">Acier</option>
+            <option value="fée">Fée</option>
+        </select><br><br>
+        <!--liste-->
+        <label for="collec">Collection:</label>
+        <select id="collec" name="collec">
+            <option value="vide"></option>
+            <option value="a">A modif</option>
+            <option value="b">A modif</option>
+            <option value="c">A modif</option>
+        </select><br><br>
+
+        <label for="date">*Année:</label>
+        <input type="text" id="date" name="date" required><br><br>
+        <!--radio buton-->
+        <label for="lang">*Langue:</label>
+        <input type="radio" id="fr" name="lang" value="fr">
+        <label for="fr">Fr</label><br>
+        <input type="radio" id="en" name="lang" value="en">
+        <label for="en">En</label><br>
+        <!--liste-->
+        <label for="pays">Pays:</label>
+        <select id="payus" name="pays">
+            <option value="galar">Galar</option>
+            <option value="alola">Alola</option>
+            <option value="vide"></option>
+            <option value="d">A modif</option>
+        </select><br><br>
+        <!--liste-->
+        <label for="rare">Rareté:</label>
+        <select id="rare" name="rare">
+            <option value="commun">Commun</option>
+            <option value="e">A modif</option>
+            <option value="f">A modif</option>
+            <option value="g">A modif</option>
+        </select><br><br>
+
+        <label for="prix">Prix:</label>
+        <input type="text" id="prix" name="prix"><br><br>
+
+        <label for="num">Numéro:</label>
+        <input type="text" id="num" name="num"><br><br>
+        <!--liste-->
+        <label for="evo">Evolution:</label>
+        <input type="text" id="evo" name="evo"><br><br>
+        
+        <input type="submit" value="Soumettre">
+    </form>
+</body>
+</html>
+
